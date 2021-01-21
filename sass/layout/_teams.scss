@@ -1,0 +1,133 @@
+.teams {
+  background-color: #f5f4fa;
+  margin-top: 60px;
+  padding-top: 60px;
+}
+
+.teams-card {
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  margin-bottom: 30px;
+}
+
+.teams-card-photo {
+  width: 100%;
+}
+
+.teams-card-position {
+  padding-top: 30px;
+  padding-bottom: 24px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.teams-list {
+  display: block;
+  padding-bottom: 60px;
+}
+
+.teams-list-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.188;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.teams-list-profession {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.188;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+// Добавить маржины иконкам
+.social-list {
+  display: flex;
+  justify-content: center;
+  padding-top: 16px;
+}
+
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  transition: all 250ms var(--timing-fn);
+}
+
+.social-list-icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
+@media screen and (min-width: 768px) {
+  .teams-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  //   .team-list {
+  //     padding: 0;
+  //     margin: 0;
+  //     list-style: none;
+  //     display: flex;
+  //     flex-wrap: wrap;
+  //     margin-left: calc(-1 * var(--card-set-gap));
+  //     margin-top: calc(-1 * var(--card-set-gap));
+
+  //     & > .teams-list-item {
+  //       flex-basis: calc(100% / 2 - var(--card-set-gap));
+  //       margin-left: var(--card-set-gap);
+  //       margin-top: var(--card-set-gap);
+  //     }
+  //   }
+}
+
+//   .teams-list {
+//     display: flex;
+//     align-items: flex-start;
+//     justify-content: space-between;
+//   }
+
+//   .team-card-position {
+//   padding: 30px 32px;
+//   }
+
+//   .social-list-link {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 44px;
+//     height: 44px;
+//     border-radius: 50%;
+//     background-color: #FFFFFF;
+//     transition: all 250ms var(--timing-fn);
+
+//     &:hover,
+//     &:focus {
+//     background-color: var(--accent-color);
+//     }
+//   }
+
+//   .social-list-icon {
+//     width: 20px;
+//     height: 20px;
+//     fill: #AFB1B8;
+//     transition: fill 250ms var(--timing-fn);
+
+//       .social-list-link:hover &,
+//       .social-list-link:focus & {
+//       fill: #FFFFFF;
+//       }
+// }

@@ -1,0 +1,124 @@
+.clients {
+  background-color: #ffffff;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.clients-list {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--card-set-gap));
+  margin-top: calc(-1 * var(--card-set-gap));
+
+  & > .clients-list-item {
+    flex-basis: calc(100% / 2 - var(--card-set-gap));
+    margin-left: var(--card-set-gap);
+    margin-top: var(--card-set-gap);
+  }
+}
+
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 210px;
+  height: 90px;
+  color: #afb1b8;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: #ffffff;
+  transition: all 250ms var(--timing-fn);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+  }
+}
+
+.clients-list-icon {
+  display: block;
+  fill: #afb1b8;
+
+  .clients-link:hover &,
+  .clients-link:focus & {
+    fill: var(--accent-color);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients-link {
+    max-width: 226px;
+  }
+
+  .clients-list > .clients-list-item {
+    flex-basis: calc(100% / 3 - var(--card-set-gap));
+    margin-left: var(--card-set-gap);
+    margin-top: var(--card-set-gap);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients {
+    margin-top: 94px;
+    margin-bottom: 94px;
+  }
+
+  .clients-list {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  //   .clients-list > .clients-list-item {
+  //     margin-left: 0;
+  //   }
+
+  //   .clients-list-item {
+  //     &:not(:last-child) {
+  //       margin-right: 30px;
+  //     }
+  //   }
+}
+
+//   .clients-list {
+//     display: flex;
+//     justify-content: center;
+//   }
+
+//   .clients-link {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 170px;
+//     height: 90px;
+//     color:  #AFB1B8;
+//     border: 1px solid #AFB1B8;
+//     box-sizing: border-box;
+//     border-radius: 4px;
+//     background-color: #FFFFFF;
+//     transition: all 250ms var(--timing-fn);
+
+//     &:hover,
+//     &:focus {
+//     border: 1px solid var(--accent-color);
+//     }
+//   }
+
+//   .clients-list-item {
+//     &:not(:last-child) {
+//     margin-right: 30px;
+//     }
+// }
+
+//   .clients-list-icon {
+//     display: block;
+//     fill: #AFB1B8;
+//     transition: all 250ms var(--timing-fn);
+
+//     .clients-link:hover &,
+//     .clients-link:focus & {
+//     fill: var(--accent-color);
+//     }
+//  }

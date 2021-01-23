@@ -430,7 +430,7 @@ img {
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity 250ms var(--timing-fn);
-  z-index: 1;
+  z-index: 4;
 }
 
 .modal-overlay.is-visible {
@@ -452,7 +452,7 @@ img {
   transition: transform 250ms var(--timing-fn);
   padding: 40px;
   opacity: 1;
-  z-index: 2;
+  z-index: 5;
 }
 
 .modal.is-hidden {

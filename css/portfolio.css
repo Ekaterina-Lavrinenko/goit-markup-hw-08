@@ -458,7 +458,6 @@ img {
     display: flex;
     align-items: baseline;
     justify-content: center;
-    margin-bottom: 60px;
   }
   .social-footer {
     margin: 0 auto;
@@ -468,11 +467,23 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-contact {
+    margin-bottom: 60px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer .container {
     display: flex;
     align-items: baseline;
     justify-content: center;
+  }
+  .footer-logo {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
   }
   .social-footer {
     margin-left: 70px;
